@@ -98,14 +98,12 @@
 
 	```
 	public fun <T : Comparable<T>> Iterable<T>.max(): T?
-	  kotlin.collections
 	```
 
 - **min**
 
 	``` 
 	public fun <T : Comparable<T>> Iterable<T>.min(): T?
-	  kotlin.collections
 	```
 - **maxBy**	
 	
@@ -309,7 +307,7 @@
 	): List<T>
 	```    
 	
-- **filterIndexedTo**: 주어진 *predicate*과 일치하는 모든 요소를 포함한 컬렉션을 반환
+- **filterIndexedTo**: 주어진 *predicate*과 일치하는 모든 요소를 결과를 기존의 컬렉션(또는 MutableCollection)에 추가하여 반환
 
 	```
 	public inline fun <T, C : MutableCollection<in T>> Iterable<T>.filterIndexedTo(
